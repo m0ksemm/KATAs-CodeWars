@@ -1,8 +1,16 @@
 ﻿using CodeWarsKATAs.Solutions;
 
 
-Console.WriteLine(MeanSquareError.Solution([1, 2, 3], [4, 5, 6]));
-Console.WriteLine(MeanSquareError.Solution([10, 20, 10, 2], [10, 25, 5, -2]));
-Console.WriteLine(MeanSquareError.Solution([-1, 0], [0, -1]));
+int[][] array =
+       {
+           new []{1, 2, 3},
+           new []{4, 5, 6},
+           new []{7, 8, 9}
+       };
+
+int[] result = SnailSort.SnailVariant2(array);
+
+string s = String.Join(" ", result);
+Console.WriteLine(s);
 
 //
