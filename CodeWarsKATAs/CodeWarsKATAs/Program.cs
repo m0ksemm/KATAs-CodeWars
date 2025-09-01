@@ -1,15 +1,10 @@
 ﻿using CodeWarsKATAs.Solutions;
+using System.Buffers.Text;
 
 
-Console.WriteLine(GraderClass.Grader(0));
-Console.WriteLine(GraderClass.Grader(1.1));
+//Console.WriteLine(NumeralSystemValidNumber.ValidateBase("1234", 8));
+Console.WriteLine(NumeralSystemValidNumber.ValidateBase("61262", 8));
 
-Console.WriteLine(GraderClass.Grader(0.9));
 
-Console.WriteLine(GraderClass.Grader(0.8));
-
-Console.WriteLine(GraderClass.Grader(0.7));
-Console.WriteLine(GraderClass.Grader(0.6));
-Console.WriteLine(GraderClass.Grader(0.5));
 
 
