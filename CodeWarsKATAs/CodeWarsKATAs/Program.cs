@@ -1,16 +1,15 @@
 ﻿using CodeWarsKATAs.Solutions;
 
 
-int[][] array =
-       {
-           new []{1, 2, 3},
-           new []{4, 5, 6},
-           new []{7, 8, 9}
-       };
+Console.WriteLine(GraderClass.Grader(0));
+Console.WriteLine(GraderClass.Grader(1.1));
 
-int[] result = SnailSort.SnailVariant2(array);
+Console.WriteLine(GraderClass.Grader(0.9));
 
-string s = String.Join(" ", result);
-Console.WriteLine(s);
+Console.WriteLine(GraderClass.Grader(0.8));
 
-//
+Console.WriteLine(GraderClass.Grader(0.7));
+Console.WriteLine(GraderClass.Grader(0.6));
+Console.WriteLine(GraderClass.Grader(0.5));
+
+
