@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CodeWarsKATAs.Solutions
 {
-    internal class Thinkful_NumberDrills
+    public class Thinkful_NumberDrills
     {
+        public static double GuessBlue(uint blueStart, uint redStart, uint bluePulled, uint redPulled)
+        {
+            return Convert.ToDouble(blueStart - bluePulled) / ((blueStart - bluePulled) + (redStart - redPulled)); 
+        }
     }
 }

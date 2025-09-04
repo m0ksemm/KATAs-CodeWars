@@ -9,9 +9,7 @@ using System.Buffers.Text;
 //Console.WriteLine("|" + RemoveFirstAndLastCharacter2.Array("1, 3") + "|");
 //Console.WriteLine("|" + RemoveFirstAndLastCharacter2.Array("1,2,3") + "|");
 //Console.WriteLine("|" + RemoveFirstAndLastCharacter2.Array("1ad,a2b") + "|");
-Console.WriteLine("|" + RemoveFirstAndLastCharacter2.Array("1,2,3,4") + "|");
-
-
+Console.WriteLine(TheRoad_KillDetective.RoadKill("=====r=rrr=rra=====eee======bb====b======="));
 
 
 
