@@ -11,20 +11,30 @@ namespace CodeWarsKATAs.Solutions
     {
         public static string ShorterReverseLonger(string a, string b)
         {
-            if (b.Length < a.Length) 
-            {
-                char[] charArray = a.ToCharArray();
-                Array.Reverse(charArray);
-
-                return b + new string(charArray) + b; 
-            }
-            else
+            if (string.IsNullOrEmpty(a))
+                a = "";
+            if (string.IsNullOrEmpty(b))
+                b = "";
+            if (a.Length < b.Length)
             {
                 char[] charArray = b.ToCharArray();
                 Array.Reverse(charArray);
                 return a + new string(charArray) + a;
             }
-             
+            else
+            {
+                char[] charArray = a.ToCharArray();
+                Array.Reverse(charArray);
+
+                return b + new string(charArray) + b;
+            }
         }
+
+        //public static string ShorterReverseLonger(string a, string b)
+        //{
+        //    a ??= "";
+        //    b ??= "";
+        //    return b.Length > a.Length ? a + string.Concat(b.Reverse()) + a : b + string.Concat(a.Reverse()) + b;
+        //}
     }
 }
